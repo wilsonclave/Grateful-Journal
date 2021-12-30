@@ -1,0 +1,24 @@
+<%- include('header') -%>
+
+<section class="container">
+    <h2 class="heading">Things I am grateful for:</h2>
+    <div class="card container">
+        <div class="list">
+            <form action="/" method="post">
+                <div class="newItems container form-group">
+                    <label for="entry1"></label>
+                    <input class="entries" type="text" name="entry1" required>
+                    <label for="entry2"></label>
+                    <input class="entries" type="text" name="entry2" required>
+                    <label for="entry3"></label>
+                    <input class="entries" type="text" name="entry3" required>
+                    <input class="dateSelection" type="date" name="entry4" required>
+                    <button class="button" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<%- include('footer') -%>

@@ -15,6 +15,11 @@ body {
     font-family: 'Dawning of a New Day', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .container {
     max-width: 1080px;
     width: 80%;
@@ -43,12 +48,17 @@ body {
     font-size: 1.6rem;
 }
 
+.new_entry_button {
+    text-align: center;
+    margin: 0 auto 1em;
+}
+
 .card {
     margin-bottom: 2em;
 }
 
 .card .list {
-    background-color: #f4dafac9;
+    background-color: #fcf9fd93;
     padding: 2em;
     border-radius: 10px;
     box-shadow: 2px 2px 2px gray;
@@ -62,23 +72,80 @@ body {
     font-family: 'Oswald';
 }
 
+.image {
+    margin-top: 1em;
+}
+
 .card .image{
     margin: 1em;
     border-radius: 10px;
     box-shadow: 2px 2px 2px gray;
 }
 
-.date {
+.card .date {
     font-family: 'Montserrat';
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    margin-top: 2em;
 }
 
 .credit{
 
     font-family: 'Montserrat';
     font-size: 0.5rem;
+    color: rgb(149, 206, 245);
 }
 
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entries{
+    margin: 0 0 1em 0;
+    padding: 0 1em;
+    border: none;
+    border-radius: 10px;
+    height: 2em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald';
+    color: #333;
+}
+
+.entries:focus{
+    box-shadow: 0 0 5px rgb(34, 66, 248);
+    border: 1px solid rgb(34, 66, 248);
+    outline: none;
+}
+
+
+.list .dateSelection {
+    margin: 0 0 1em;
+    color: rgb(34, 74, 250);
+    border: none;
+    outline: none;
+    background-color: #d4dcf8d3;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    
+}
+
+.button{
+    display: block;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    padding: 0.6em 1.5em;
+    color: #fff;
+    background-color: rgb(91, 115, 251);
+}
+
+.card .date {
+    font-size: 1rem;
+    color: rgb(91, 115, 251);
+}
 
 @media(min-width:800px){
     .title{
@@ -87,7 +154,7 @@ body {
         margin: 0.5em 0 0 0;
     }
     .quote{
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin: 0;
     }
     .heading{
